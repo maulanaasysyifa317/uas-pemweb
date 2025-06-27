@@ -1,0 +1,67 @@
+/* src/App.css */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004d40;
+}
+
+.competition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.competition-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.competition-card:hover {
+  transform: translateY(-5px);
+}
+
+.competition-emblem {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.competition-info h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #00796b;
+}
+
+.competition-info p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.season-info {
+  font-style: italic;
+  color: #555;
+  font-size: 0.8rem;
+}
